@@ -9,3 +9,10 @@
 require 'vendor/autoload.php';
 require 'includes/logger-instantiation.php';
 
+require 'src/HtmlCleaner.php';
+
+$page = new HtmlCleaner('word-filtered-output.html');
+
+$page->clean();
+
+
